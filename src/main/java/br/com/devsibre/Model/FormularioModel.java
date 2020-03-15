@@ -18,10 +18,12 @@ public class FormularioModel {
     private String nome;
     @Column(length = 200, nullable = false)
     private String ender;
-    @Column(length = 12, nullable = false)
+    @Column(length = 12)
     private String fone;
-    private String email;
+    @Column(length = 40)
+    private String email;    
     private String data;
+    @Column(length = 20)
     private String status;
 	
 	public FormularioModel() {

@@ -42,10 +42,10 @@ and open the template in the editor.
             <thead>
                 <tr>                        
                     <th>NOME</th>
-                    <th>ENDERECO</th>
+                  <!-- <th>ENDERECO</th>
+                  <th>DATA_NASC</th> -->  
                     <th>TELEFONE</th>
-                    <th>EMAIL</th>
-                    <th>DATA_NASC</th>
+                    <th>EMAIL</th>                    
                     <th>STATUS</th>
                     <th>EDITAR</th>
                     <th>DELETE</th>
@@ -56,10 +56,10 @@ and open the template in the editor.
             <tbody>               
                 <tr th:each="cad:${cadastro}">
                     <td th:text="${cad.nome}"></td>
-                    <td th:text="${cad.ender}"></td>
+                    <!--<td th:text="${cad.ender}"></td>
+                    <td th:text="${cad.data}"></td>  -->                    
                     <td th:text="${cad.fone}"></td>
-                    <td th:text="${cad.email}"></td>
-                    <td th:text="${cad.data}"></td>
+                    <td th:text="${cad.email}"></td>                    
                     <td th:text="${cad.status}"></td>
                     <td>
                         <a th:href="@{/edite/}+${cad.id_c}"class="btn btn-warning">Aterar</a>                            

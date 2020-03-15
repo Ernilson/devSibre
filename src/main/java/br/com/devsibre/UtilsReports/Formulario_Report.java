@@ -35,7 +35,7 @@ public class Formulario_Report implements Formulario_Report_Service{
 	@Override
 	public boolean creatPdf(List<FormularioModel> cad, ServletContext context, HttpServletRequest request,
 			HttpServletResponse response) {
-		Document document = new Document(PageSize.A4, 15, 15, 45, 30);
+		Document document = new Document(PageSize.A4, 40, 40, 10, 10);
 
         try {
             String filePath = context.getRealPath("/resources/reports");
@@ -65,7 +65,7 @@ public class Formulario_Report implements Formulario_Report_Service{
             Font tableHeader = FontFactory.getFont("Arial", 10, BaseColor.BLACK);
             Font tableBody = FontFactory.getFont("Arial", 8, BaseColor.BLACK);
 
-            float[] columnWidths = {2f, 2f, 2f, 2f, 2f};
+            float[] columnWidths = {3f, 5f, 2f, 3f, 2f};
             table.setWidths(columnWidths);
 
             PdfPCell nome = new PdfPCell(new Paragraph("Nome", tableHeader));
