@@ -38,7 +38,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
             .antMatchers(HttpMethod.POST, "/newagenda").hasRole("USER") // permite apenas perfis usuario1
             .antMatchers(HttpMethod.POST, "/agendas").hasRole("USER")
             .antMatchers(HttpMethod.GET, "/agendas").hasRole("USER") 
-            .antMatchers(HttpMethod.GET,"/listar").hasRole("ADMIN") // permite apenas perfis administrador
+            .antMatchers(HttpMethod.GET,"/listarcadastro").hasRole("ADMIN") // permite apenas perfis administrador
+            .antMatchers(HttpMethod.POST,"/listarcadastro").hasRole("ADMIN") // permite apenas perfis administrador
             .antMatchers(HttpMethod.GET,"/lista_patrimonio").hasRole("ADMIN")
            .antMatchers(HttpMethod.GET,"/listacantina").hasRole("ADMIN")
            .antMatchers(HttpMethod.POST,"/listacantina").hasRole("ADMIN")

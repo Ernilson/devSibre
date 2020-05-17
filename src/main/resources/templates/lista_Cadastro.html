@@ -16,7 +16,7 @@ and open the template in the editor.
         <header th:replace="layout/template :: header"></header>
     <Center>
     	<h5><a th:href="@{/formulario}">Novo Cadastro</a></h5>
-        <form action="#" th:action="@{/listar}" th:object="${nome}">
+        <form action="#" th:action="@{/listarcadastro}" th:object="${nome}">
         
             <div class="input-group mb-3 input-group mb-3 col-md-5 ml-5 mt-5">
             
@@ -31,7 +31,7 @@ and open the template in the editor.
                        aria-label="Informe o nome" th:value="${nome}" aria-describedby="basic-addon2"> 
                 
                 <div class="input-group-append ml-2">
-                    <a class="btn btn-secondary btn-sm" href="/listar" role="button"> <span class="fa fa-search"></span>
+                    <a class="btn btn-secondary btn-sm" href="/listarcadastro" role="button"> <span class="fa fa-search"></span>
                         Limpar</a>
                 </div>
             </div>       
