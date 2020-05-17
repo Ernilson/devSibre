@@ -58,7 +58,7 @@ public class FormularioControl {
     @GetMapping("/listarcadastro")
     public ModelAndView lista(@RequestParam(value = "nome", required = false) String nome) {
         List<FormularioModel> retorno = new ArrayList<>();
-        ModelAndView model = new ModelAndView("/lista_Cadastro.html");
+        ModelAndView model = new ModelAndView("/listaCadastro.html");
         if (nome == null) {
             retorno = service.listAll();
         } else {
