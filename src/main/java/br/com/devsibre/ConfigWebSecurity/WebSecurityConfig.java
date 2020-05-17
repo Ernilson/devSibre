@@ -41,8 +41,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
             .antMatchers(HttpMethod.GET,"/listarcadastro").hasRole("ADMIN") // permite apenas perfis administrador
             .antMatchers(HttpMethod.POST,"/listarcadastro").hasRole("ADMIN") // permite apenas perfis administrador
             .antMatchers(HttpMethod.GET,"/lista_patrimonio").hasRole("ADMIN")
-           .antMatchers(HttpMethod.GET,"/listacantina").hasRole("ADMIN")
-           .antMatchers(HttpMethod.POST,"/listacantina").hasRole("ADMIN")
+           .antMatchers(HttpMethod.GET,"/listacantina").hasRole("USER")
+           .antMatchers(HttpMethod.POST,"/listacantina").hasRole("USER")
            .anyRequest().authenticated()
 	.and().formLogin().loginPage("/entrar").permitAll() // página padrão se efetuou o login
 	.and().logout().logoutRequestMatcher(new AntPathRequestMatcher("/logout")); // página padrão após fazer o logout
