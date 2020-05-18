@@ -45,7 +45,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
            .antMatchers(HttpMethod.POST,"/listacantina").hasRole("USER")
            .anyRequest().authenticated()
 	.and().formLogin().loginPage("/entrar").permitAll() // página padrão se efetuou o login
-	.and().logout().logoutRequestMatcher(new AntPathRequestMatcher("/logout")); // página padrão após fazer o logout
+	.and().logout().logoutRequestMatcher(new AntPathRequestMatcher("/logout")).logoutSuccessUrl("/entrar"); // página padrão após fazer o logout
    
     }
 
