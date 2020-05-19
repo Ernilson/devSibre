@@ -9,7 +9,7 @@ public class DevsibreApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(DevsibreApplication.class, args);
-		 System.out.print(new BCryptPasswordEncoder().encode("santidade777"));
+		// System.out.print(new BCryptPasswordEncoder().encode("santidade777"));
 	}
 
 }
