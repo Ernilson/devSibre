@@ -11,7 +11,7 @@
 
     <div class="modal-dialog text-center">
         <div class="row">
-            <div class="col-sm-8 col-sm-offset-4">
+            <div class="col-sm-12 col-sm-offset-4">
                 <div th:if="${param.error}">
                     <div class="alert alert-danger">Usuário e/ou inválidos!</div>
                 </div>            
@@ -21,7 +21,7 @@
                             <h3 class="panel-title">ENTRE</h3>
                         </div>
                         <div class="panel-body">
-                            <form class="col-16" action="/entrar" method="post">
+                            <form class="col-12" action="/entrar" method="post">
                                 <div class="form-group">
                                     <input name="username" class="form-control" placeholder="Usuário"/>
                                 </div>
