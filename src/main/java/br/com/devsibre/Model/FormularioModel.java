@@ -18,7 +18,7 @@ public class FormularioModel {
     private String nome;
     @Column(length = 200, nullable = false)
     private String ender;
-    @Column(length = 12)
+    @Column(length = 20)
     private String fone;
     @Column(length = 40)
     private String email;    
