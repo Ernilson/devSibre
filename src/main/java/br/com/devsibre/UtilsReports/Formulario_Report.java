@@ -146,7 +146,7 @@ public class Formulario_Report implements Formulario_Report_Service{
                 nomeValue.setExtraParagraphSpace(5f);
                 table.addCell(nomeValue);
 
-                PdfPCell enderValue = new PdfPCell(new Paragraph(cadastro.getEnder(), tableBody));
+                PdfPCell enderValue = new PdfPCell(new Paragraph(cadastro.getLogradouro(), tableBody));
                 enderValue.setBorderColor(BaseColor.BLACK);
                 enderValue.setPaddingLeft(10);
                 enderValue.setHorizontalAlignment(Element.ALIGN_CENTER);

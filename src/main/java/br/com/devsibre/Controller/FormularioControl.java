@@ -51,7 +51,7 @@ public class FormularioControl {
     @RequestMapping(method = RequestMethod.POST, value = "/salvar")
     public String salvar(FormularioModel c) {
         service.saveOrUpdate(c);
-        return "redirect:/formulario";
+        return "redirect:/listarcadastro";
     }
 
     //Metodo para listar todos e buscar os cadastros
