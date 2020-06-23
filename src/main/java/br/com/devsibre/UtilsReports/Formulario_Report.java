@@ -65,7 +65,7 @@ public class Formulario_Report implements Formulario_Report_Service{
             Font tableHeader = FontFactory.getFont("Arial", 10, BaseColor.BLACK);
             Font tableBody = FontFactory.getFont("Arial", 8, BaseColor.BLACK);
 
-            float[] columnWidths = {5f, 5f, 4f, 3f, 2f};
+            float[] columnWidths = {5f, 5f, 4f, 3f, 3f};
             table.setWidths(columnWidths);
             /*
             PdfPCell id = new PdfPCell(new Paragraph("ID", tableHeader));
@@ -104,7 +104,7 @@ public class Formulario_Report implements Formulario_Report_Service{
             fone.setExtraParagraphSpace(5f);
             table.addCell(fone);
              
-            PdfPCell email = new PdfPCell(new Paragraph("Email", tableHeader));
+            PdfPCell email = new PdfPCell(new Paragraph("Telefone", tableHeader));
             email.setBorderColor(BaseColor.BLACK);
             email.setPaddingLeft(10);
             email.setHorizontalAlignment(Element.ALIGN_CENTER);
