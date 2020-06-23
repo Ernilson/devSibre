@@ -40,8 +40,9 @@ and open the template in the editor.
         <table class="table" with="800px">
 
             <thead>
-                <tr>                        
+                <tr>    <!--                  
                     <th>ID</th>
+                    -->
                     <th>NOME</th>
                     <th>QUADRA</th>  
                     <th>BAIRRO</th>  
@@ -57,7 +58,9 @@ and open the template in the editor.
             </thead>
             <tbody>               
                 <tr th:each="cad:${cadastro}">
+                    <!--
                     <td th:text="${cad.id_c}"></td>
+                    -->
                     <td th:text="${cad.nome}"></td> 
                     <td th:text="${cad.logradouro}"></td> 
                     <td th:text="${cad.bairro}"></td> 

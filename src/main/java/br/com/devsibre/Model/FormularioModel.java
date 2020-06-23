@@ -11,16 +11,16 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "cadastro")
 public class FormularioModel {
-	
-	@Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id_c;
     @Column(length = 200, nullable = false)
-    private String nome;    
+    private String nome;
     @Column(length = 20)
     private String fone;
     @Column(length = 40)
-    private String email;    
+    private String email;
     private String data;
     @Column(length = 20)
     private String status;
@@ -29,10 +29,10 @@ public class FormularioModel {
     private String bairro;
     private String localidade;
     private String uf;
-	
-	public FormularioModel() {
-		
-	}
+
+    public FormularioModel() {
+
+    }
 
     public FormularioModel(Long id_c, String nome, String fone, String email, String data, String status, String cep, String logradouro, String bairro, String localidade, String uf) {
         this.id_c = id_c;
@@ -230,6 +230,6 @@ public class FormularioModel {
     @Override
     public String toString() {
         return "FormularioModel{" + "id_c=" + id_c + ", nome=" + nome + ", fone=" + fone + ", email=" + email + ", data=" + data + ", status=" + status + ", cep=" + cep + ", logradouro=" + logradouro + ", bairro=" + bairro + ", localidade=" + localidade + ", uf=" + uf + '}';
-    }	
-	
+    }
+
 }
