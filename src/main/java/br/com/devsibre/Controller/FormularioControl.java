@@ -51,14 +51,14 @@ public class FormularioControl {
     @RequestMapping(method = RequestMethod.POST, value = "/salvar")
     public String salvar(FormularioModel c) {
         service.saveOrUpdate(c);
-        return "redirect:/listarcadastro";
+        return "redirect:/formulario";
     }
 
     //Metodo para listar todos e buscar os cadastros
-    @GetMapping("/listarcadastro")
+    @GetMapping("/listar")
     public ModelAndView lista(@RequestParam(value = "nome", required = false) String nome) {
         List<FormularioModel> retorno = new ArrayList<>();
-        ModelAndView model = new ModelAndView("listaCadastro.html");
+        ModelAndView model = new ModelAndView("/lista_Cadastro.html");
         if (nome == null) {
             retorno = service.listAll();
         } else {
@@ -83,14 +83,14 @@ public class FormularioControl {
     public ModelAndView editsave(@ModelAttribute("cad") FormularioModel emp) {
         boolean idd = Boolean.getBoolean("id");
         idd = service.alterar(emp);
-        return new ModelAndView("redirect:/listarcadastro");
+        return new ModelAndView("redirect:/listar");
     }
 
     //Metodo para excluir dados do cadastro
     @GetMapping("/deletar/{id_c}")
     public String remover(@PathVariable long id_c) {
         service.delete(id_c);
-        return "redirect:/listarcadastro";
+        return "redirect:/listar";
     }
     
     @GetMapping(value = "/pdf")

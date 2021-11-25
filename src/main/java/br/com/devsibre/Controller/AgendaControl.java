@@ -93,4 +93,5 @@ public class AgendaControl {
 		Pservice.delete(id);
 		return "redirect:/agendas";
 	}
+        
 }
