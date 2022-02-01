@@ -29,7 +29,7 @@ public class AgendaControl {
 		return "entrar";
 	}
 
-	@GetMapping({ "/", "/index" })
+	@GetMapping({ "/index" })
 	public String Incio() {
 		return "index";
 	}
