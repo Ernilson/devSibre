@@ -29,7 +29,7 @@ public class AgendaControl {
 		return "entrar";
 	}
 
-	@GetMapping({ "/index" })
+	@GetMapping({"/index" })
 	public String Incio() {
 		return "index";
 	}
@@ -93,5 +93,4 @@ public class AgendaControl {
 		Pservice.delete(id);
 		return "redirect:/agendas";
 	}
-        
 }

@@ -36,7 +36,7 @@ public class CantinaControl {
 	    @Autowired
 	    private ServletContext context;
 	    
-	    //Metodo para listar todos os cadastros
+	    //Metodo para listar debitos
 	    @RequestMapping(method = RequestMethod.GET, value="/listacantina")
 	    public ModelAndView listarCantina(){
 	      ModelAndView v = new ModelAndView("lista_cantina.html");

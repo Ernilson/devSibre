@@ -25,7 +25,7 @@ public class PatrimonioControl {
 	    //Metodo para listar todos os cadastros
 	    @RequestMapping(method = RequestMethod.GET, value="/lista_patrimonio")
 	    public ModelAndView listarPatrimonio(){
-	      ModelAndView v = new ModelAndView("/lista_patrimonio");
+	      ModelAndView v = new ModelAndView("lista_patrimonio");
 	      List<PatrimonioModel> pat = new ArrayList<>();
 	      pat = psl.listAll();
 	      v.addObject("pat", pat);

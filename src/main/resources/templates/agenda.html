@@ -12,7 +12,7 @@
         <header th:replace="layout/template :: header"></header>
         <header>
             <nav class="navbar navbar-light bg-light">
-                <span class="navbar-brand mb-0 h1" style="font-weight: bold;">Agenda Sibre</span>
+                <span class="navbar-brand mb-0 h1" style="font-weight: bold;"> Relatorio</span>
                
                 <a href="/newagenda" class="btn btn-primary" role="button">Novo Post</a>
                
@@ -36,12 +36,12 @@
                         <a th:href="@{/agendas/}+${agds.id}"><h4 class="card-title" style="font-weight: bold; color: black; padding-top: 5px;"><span th:text="${agds.titulo}"></span></h4></a>
                         <p class="card-text"><span th:utext="${#strings.abbreviate(agds.text,400)} "></span></p>
                         <!--
-                        <a th:href="${(#mvc.url('BC#getPostDetails').arg(0, post.id)).build()}" class="card-link">Acessar</a>-->
+                        <a th:href="${(#mvc.url('BC#getagendaDetails').arg(0, agds.id)).build()}" class="card-link">Acessar</a>-->
                     </div>
                 </div>
             </div>
         </section>
 
     </body>
-    <footer th:replace="layout/template :: footer"></footer>
+    <!--<footer th:replace="layout/template :: footer"></footer>-->
 </html>

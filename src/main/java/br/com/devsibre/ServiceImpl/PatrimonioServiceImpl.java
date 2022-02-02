@@ -21,14 +21,8 @@ public class PatrimonioServiceImpl implements PatrimonioService{
 	public List<PatrimonioModel> listAll() {
 		List<PatrimonioModel> cm = new ArrayList<>();
         pr.findAll().forEach(cm::add); //fun with Java 8
-        return cm;
-	}
-
-	@Override
-	public List<PatrimonioModel> findByNomeContainingIgnoreCase(String nome) {
-		//return pr.findByNomeContainingIgnoreCase(nome);
-		return null;
-	}
+        return cm;		
+	}	
 
 	@Override
 	public boolean alterar(PatrimonioModel cnt) {
