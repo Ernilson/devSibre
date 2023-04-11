@@ -23,8 +23,8 @@ public class SwaggerConfig {
     public Docket productApi() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("br.com.apisibre2"))
-                .paths(regex("/contato.*"))
+                .apis(RequestHandlerSelectors.basePackage("br.com.devsibre"))
+                .paths(regex("/.*"))
                 .build()
                 .apiInfo(metaInfo());
     }

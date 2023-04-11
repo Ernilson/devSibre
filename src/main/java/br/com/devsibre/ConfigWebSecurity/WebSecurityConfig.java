@@ -34,15 +34,16 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
             .antMatchers(HttpMethod.GET, "/agendas_User").permitAll() // permite qualquer usuário a esta pagina em especifico
             .antMatchers(HttpMethod.GET, "/agendas_User/{id}").permitAll() // permite qualquer usuário a esta pagina em especifico
             .antMatchers(HttpMethod.POST, "/agendas_User").permitAll() // permite qualquer usuário a esta pagina em especifico
-            .antMatchers(HttpMethod.GET, "/newagenda").hasRole("USER2")
-            .antMatchers(HttpMethod.POST, "/newagenda").hasRole("USER2") // permite apenas perfis usuario1
-            .antMatchers(HttpMethod.POST, "/agendas").hasRole("USER2")
-            .antMatchers(HttpMethod.GET, "/agendas").hasRole("USER2") 
+            .antMatchers(HttpMethod.GET, "/newagenda").hasRole("ADMIN")
+            .antMatchers(HttpMethod.POST, "/newagenda").hasRole("ADMIN") // permite apenas perfis usuario1
+            .antMatchers(HttpMethod.POST, "/agendas").hasRole("ADMIN")
+            .antMatchers(HttpMethod.GET, "/agendas").hasRole("ADMIN") 
             .antMatchers(HttpMethod.GET,"/listarcadastro").hasRole("ADMIN") // permite apenas perfis administrador
             .antMatchers(HttpMethod.POST,"/listarcadastro").hasRole("ADMIN") // permite apenas perfis administrador
             .antMatchers(HttpMethod.GET,"/lista_patrimonio").hasRole("ADMIN")
-           .antMatchers(HttpMethod.GET,"/listacantina").hasRole("USER")
-           .antMatchers(HttpMethod.POST,"/listacantina").hasRole("USER")
+           .antMatchers(HttpMethod.GET,"/listacantina").hasRole("ADMIN")
+           .antMatchers(HttpMethod.POST,"/listacantina").hasRole("ADMIN")
+           //.antMatchers(HttpMethod.POST,"/listacantina").hasRole("USER")
            .anyRequest().authenticated()
 	.and().formLogin().loginPage("/entrar").permitAll() // página padrão se efetuou o login
 	.and().logout().logoutRequestMatcher(new AntPathRequestMatcher("/logout")).logoutSuccessUrl("/entrar"); // página padrão após fazer o logout
