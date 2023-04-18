@@ -12,7 +12,7 @@ import javax.persistence.ManyToMany;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import br.com.devsibre.Model.Role;
+import br.com.devsibre.Model.Roles;
 
 @Entity
 public class Usuario implements UserDetails{
@@ -29,13 +29,13 @@ public class Usuario implements UserDetails{
 	          name = "usuario_id", referencedColumnName = "login"), 
 	        inverseJoinColumns = @JoinColumn(
 	          name = "role_id", referencedColumnName = "nomeRole"))
-	private List<Role>roles;
+	private List<Roles>roles;
 
 	public Usuario() {
 		
 	}	
 
-	public Usuario(String login, String email, String senha, List<br.com.devsibre.Model.Role> roles) {
+	public Usuario(String login, String email, String senha, List<br.com.devsibre.Model.Roles> roles) {
 		super();
 		this.login = login;
 		this.email = email;
@@ -62,11 +62,11 @@ public class Usuario implements UserDetails{
 		this.senha = senha;
 	}
 	
-	public List<Role> getRoles() {
+	public List<Roles> getRoles() {
 		return roles;
 	}
 	
-	public void setRoles(List<Role> roles) {
+	public void setRoles(List<Roles> roles) {
 		this.roles = roles;
 	}
 	

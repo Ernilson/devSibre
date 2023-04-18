@@ -11,7 +11,7 @@ import org.springframework.security.core.GrantedAuthority;
 import br.com.devsibre.Model.Usuario;
 
 @Entity
-public class Role implements GrantedAuthority{
+public class Roles implements GrantedAuthority{
 
 	 /**
 	 * 
