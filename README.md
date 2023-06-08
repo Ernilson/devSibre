@@ -37,6 +37,8 @@ docker exec -it "nome do container" mysql -p
 docker run -it "nome do container" mysql -p
 ------------------------------------------------------------------------------------
 docker-compose up --build --force-recreate
+------------------------------------------------Comando para imagem Docker chamada "devsibre" com base no Dockerfile fornecido e com as variáveis de ambiente e argumentos especificados---------------------------------
+docker build --build-arg PROFILE=dev --build-arg ADDITIONAL_OPTS="-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:8000" -t devsibre .
 ------------------------------postgres------------------------------------------
 docker exec -it postgres-0 bash
 psql -U postgres
