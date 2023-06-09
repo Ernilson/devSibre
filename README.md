@@ -1,4 +1,31 @@
-# crud-springboot-docker
+## Projeto Devsibre
+
+## Sobre o projeto
+
+- Plataforma para gerenciamento de movimentação de Formularios, Agenda, Inventarios e Cobranças.
+
+## Ferramentas:
+
+- JDK 8
+- IDE Eclipse (STS4)
+- Maven
+- Docker/Docker-Compose
+
+## Frameworks e Tecnologias:
+- Spring Boot / Data
+- JSP (JavaServer Pages)
+- Hibernate
+- Interface web com Bootstrap
+- Testes de Integração com JUnit 5
+
+## Banco de Dados:
+- Mysql
+
+## Acesso ao Frontend do Projeto
+- http://localhost:8080/
+- http://localhost:8080/agendas_User
+- http://localhost:8080/Entrar
+<br><br>
 
 Comandos Docker:
 
