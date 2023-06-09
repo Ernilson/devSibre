@@ -13,13 +13,16 @@
 
 ## Frameworks e Tecnologias:
 - Spring Boot / Data
-- JSP (JavaServer Pages)
+- Frameworks Spring/jpa
 - Hibernate
+- Padrão MVC
 - Interface web com Bootstrap
 - Testes de Integração com JUnit 5
+- Thymeleaf como template engine
 
 ## Banco de Dados:
 - Mysql
+- Nome do Banco: devsibredb
 
 ## EXECUTE
 - mvn clean install
