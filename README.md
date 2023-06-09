@@ -21,6 +21,11 @@
 ## Banco de Dados:
 - Mysql
 
+## EXECUTE
+- mvn clean install
+Na rais do diretorio execute o comando a abaixo gerar imagem e o banco via container
+- docker-compose up --build --force-recreate
+
 ## Acesso ao Frontend do Projeto
 - http://localhost:8080/
 - http://localhost:8080/agendas_User
