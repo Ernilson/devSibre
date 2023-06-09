@@ -42,7 +42,11 @@ Na rais do diretorio execute o comando a abaixo gerar imagem e o banco via conta
 
 ![Tela de Patrimonio](https://github.com/Ernilson/devsibre/assets/30840118/126dbff2-243d-4f2a-90e6-67701c0ebd3a)
 
+![Tela de Relatorio](https://github.com/Ernilson/devsibre/assets/30840118/def69275-eaf5-4682-b4fe-99379fa65891)
+
 ![modelagem](https://github.com/Ernilson/devsibre/assets/30840118/1ea4e495-f6ea-4888-afb1-a076a1602dc0)
+
+
 Comandos Docker:
 
 para iniciar um container que ja existe.(que contenha images)
