@@ -49,10 +49,10 @@ Na rais do diretorio execute o comando a abaixo gerar imagem e o banco via conta
 ## TELA PATRIMONIO
 ![Tela de Patrimonio](https://github.com/Ernilson/devsibre/assets/30840118/126dbff2-243d-4f2a-90e6-67701c0ebd3a)
 
-## TELA RELATORIO
+## TELA RELATORIO DE CADASTRO
 ![Tela de Relatorio](https://github.com/Ernilson/devsibre/assets/30840118/def69275-eaf5-4682-b4fe-99379fa65891)
 
-## TELA RELATÓRIO
+## TELA RELATÓRIO DE DÉBITOS
 ![Relatorio de Membros](https://github.com/Ernilson/devsibre/assets/30840118/23e86abb-c18d-4187-a7b2-62a02f0ae6e6)
 
 ## TELA DE MODELAGEM
