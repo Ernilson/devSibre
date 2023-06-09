@@ -49,7 +49,7 @@ Na rais do diretorio execute o comando a abaixo gerar imagem e o banco via conta
 ## TELA RELATORIO
 ![Tela de Relatorio](https://github.com/Ernilson/devsibre/assets/30840118/def69275-eaf5-4682-b4fe-99379fa65891)
 
-## TELA INICAL
+## TELA INICIAL
 ![Tela Inical](https://github.com/Ernilson/devsibre/assets/30840118/2468c14b-1be7-4900-8164-f1289680739f)
 
 ## TELA DE LOGIN
