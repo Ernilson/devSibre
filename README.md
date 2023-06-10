@@ -61,9 +61,9 @@ Na rais do diretorio execute o comando a abaixo gerar imagem e o banco via conta
 ## TELA DE MODELAGEM
 ![modelagem](https://github.com/Ernilson/devsibre/assets/30840118/1ea4e495-f6ea-4888-afb1-a076a1602dc0)
 
-Comandos Docker:
-------------------------------------------------------------------------------------
+## Comandos Docker:
 docker-compose up --build --force-recreate
---------------Comando para imagem Docker chamada "devsibre" ----------
+
+## Comando para imagem Docker chamada "devsibre" 
 docker build --build-arg PROFILE=dev --build-arg ADDITIONAL_OPTS="-agentlib:jdwp=transport=dt_socket,
 server=y,suspend=n,address=*:8000" -t devsibre .
