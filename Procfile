@@ -35,3 +35,10 @@ docker run --name mybanco -e MYSQL_ROOT_PASSWORD=root -p 3306:3306 -d mysql
 -----------------------------------------------------------------------------
 docker exec -it "nome do container" mysql -p
 docker run -it "nome do container" mysql -p
+
+------------------------------postgres------------------------------------------
+docker exec -it postgres-0 bash
+psql -U postgres
+\du -> para super usuario
+psql -h localhost -p 5432 -U postgres
+
