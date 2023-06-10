@@ -65,9 +65,5 @@ Comandos Docker:
 ------------------------------------------------------------------------------------
 docker-compose up --build --force-recreate
 --------------Comando para imagem Docker chamada "devsibre" ----------
-docker build --build-arg PROFILE=dev --build-arg ADDITIONAL_OPTS="-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:8000" -t devsibre .
-------------------------------postgres------------------------------------------
-docker exec -it postgres-0 bash
-psql -U postgres
-\du -> para super usuario
-psql -h localhost -p 5432 -U postgres
+docker build --build-arg PROFILE=dev --build-arg ADDITIONAL_OPTS="-agentlib:jdwp=transport=dt_socket,
+server=y,suspend=n,address=*:8000" -t devsibre .
